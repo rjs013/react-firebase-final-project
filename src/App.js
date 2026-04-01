@@ -66,6 +66,7 @@ function App() {
 
   useEffect(() => {
     fetchNotes();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const filtered = notes.filter((n) =>
@@ -90,7 +91,7 @@ function App() {
           <span className="brand-name">Noter</span>
         </div>
         <nav className="nav-links">
-          <a className="nav-item active" href="#">
+          <a className="nav-item active" href="/#">
             <span className="nav-icon">◈</span> All Notes
           </a>
         </nav>
